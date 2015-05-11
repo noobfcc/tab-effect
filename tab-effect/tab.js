@@ -1,4 +1,4 @@
-/**
+﻿/**
  * 标签切换-还在完善中......
  * author: fcc 905464262@qq.com
  * date: 2015-05-09
@@ -55,6 +55,7 @@
             var tabChange = setInterval(autotab,time);
             $tabdom.find("ul").children().mouseover(function(){
                 clearInterval(tabChange);
+		number = -1;
             });
             $tabdom.find("ul").children().mouseout(function(){
                 tabChange = setInterval(autotab,time);
